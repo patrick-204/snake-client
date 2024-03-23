@@ -1,25 +1,8 @@
-// require the client connection object so that can send messages to the server
-// const { connect } = require("./client");
-// const conn = require('./play');
-// define variable connection for mapping to the connect object 
-// let connection = require('./play');
+// define variable connection for mapping to the connect object
 let connection;
 
-// define movement commands in form of object
-const movementCommands = {
-  '\u0077': 'up',
-  '\u0061': 'left',
-  '\u0073': 'down',
-  '\u0064': 'right'
-}
-
-// define messages for the server in form of object
-const messagesToSnek = {
-  'z': 'you',
-  'x': 'can\'t',
-  'c': 'catch',
-  'v': 'me'
-}
+// require the key constants
+const { movementCommands, messagesToSnek } = require('./constants');
 
 // specifies what happens when data is received from stdin
 // (when key is pressed on keyboard)
@@ -46,10 +29,10 @@ const handleUserInput = function(key) {
     connection.write(`Say: ${message}`);
   }
 
-}
+};
 
 // setup interface to handle user input from stdin
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
