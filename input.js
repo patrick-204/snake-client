@@ -13,30 +13,21 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
-  // if the w key is presses, write "Move: up" to the server using 
-  // the connection object.
-  // use unicode value
-  if (key === "\u0077") {
-    connection.write("Move: up");
-    // console.log("test");
+  // define movement commands in form of object
+  const movementCommands = {
+    '\u0077': 'up',
+    '\u0061': 'left',
+    '\u0073': 'down',
+    '\u0064': 'right'
   }
 
-  // if the a key is presses, write "Move: left"
-  // use unicode value
-  if (key === "\u0061") {
-    connection.write("Move: left");
-  }
+  // define a constant that is assigned the value of whichever key is pressed
+  const command = movementCommands[key];
 
-  // if the s key is presses, write "Move: down"
-  // use unicode value  
-  if (key === "\u0073") {
-    connection.write("Move: down");
-  }
-
-  // if the d key is presses, write "Move: right"
-  // use unicode value
-  if (key === "\u0064") {
-    connection.write("Move: right");
+  // if the w, a, s, or d keys are pressed then move in whichever
+  // direction is assigned to the properties value
+  if (command) {
+    connection.write(`Move: ${command}`);
   }
 }
 
