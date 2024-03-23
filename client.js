@@ -17,6 +17,9 @@ const connect = function() {
   // to server
   conn.on("connect", () => {
     console.log("connected to server!");
+    // send move up command to server as soon as connect
+    // conn.write("Move: up");
+    // write 3 letter name to server
     conn.write("Name: pat");
   });
 
