@@ -31,4 +31,5 @@ const connect = function() {
   return conn;
 };
 
-module.exports = connect;
+// export the connection function as an object using shorthand
+module.exports = { connect };
