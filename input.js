@@ -5,20 +5,20 @@
 // let connection = require('./play');
 let connection;
 
+// define movement commands in form of object
+const movementCommands = {
+  '\u0077': 'up',
+  '\u0061': 'left',
+  '\u0073': 'down',
+  '\u0064': 'right'
+}
+
 // specifies what happens when data is received from stdin
 // (when key is pressed on keyboard)
 const handleUserInput = function(key) {
   // if ctrl+c is pressed then exit game
   if (key === "\u0003") {
     process.exit();
-  }
-
-  // define movement commands in form of object
-  const movementCommands = {
-    '\u0077': 'up',
-    '\u0061': 'left',
-    '\u0073': 'down',
-    '\u0064': 'right'
   }
 
   // define a constant that is assigned the value of whichever key is pressed
