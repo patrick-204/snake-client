@@ -22,7 +22,7 @@ const connect = function() {
 
     // make sure user inputs name as cmd line arg. If don't then exit
     if (process.argv.length < 3 || process.argv[2].length > 3) {
-      console.log("Enter name 3 letter name as command line argument.");
+      console.log("Enter 3 letter name as command line argument.");
       process.exit();
     }
 

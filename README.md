@@ -4,7 +4,7 @@ Snake game is a very popular video game. It is a video game concept where the pl
 
 This is simply a multiplayer take on the genre.
 
-Before you can run this client, you will need to be running the server side which you can download and install from [here](https://github.com/taniarascia/snek.git). 
+Before you can run this client, you will need to be running the server side which you can download and install from [here](https://github.com/lighthouse-labs/snek-multiplayer). 
 
 ## Final Product
 
@@ -12,11 +12,11 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
-- Run the development snake client using the `node play.js` command.
+- Follow the instructions inside the snek server repo to run the server side. Make sure the snek server is running before running the client
+- Run the development snake client from the terminal by entering `node play.js` <3 letter name/nickname>
 
 ## Play the game 
 
-- Enter 3 letter name as command line argument when run `node play.js`
-- Move up using w key, left using a key, down using s key, and right using d key 
-- The game can be exited using ctrl + c
+- Move up using the 'w' key, left using the 'a' key, down using 's' key, and right using 'd' key 
+- Messages can be sent to the terminal using the 'z' ("you"), 'x' (can't), 'c' ("catch"), and 'v' ("me") keys
+- The game can be exited at any time using ctrl + c

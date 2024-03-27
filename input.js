@@ -31,7 +31,7 @@ const handleUserInput = function(key) {
 
 };
 
-// setup interface to handle user input from stdin
+// set up interface to handle user input from stdin
 const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
