@@ -12,11 +12,11 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Getting Started
 
-- Follow the instructions inside the snek server repo to run the server side. Make sure the snek server is running before running the client
-- Run the development snake client from the terminal by entering `node play.js` <3 letter name/nickname>
+- Follow the instructions inside the snek server repo to run the server side. Make sure the snek server is running before running the client.
+- Run the development snake client from the terminal by entering `node play.js` <3 letter name/nickname>.
 
 ## Play the game 
 
-- Move up using the 'w' key, left using the 'a' key, down using 's' key, and right using 'd' key 
-- Messages can be sent to the terminal using the 'z' ("you"), 'x' (can't), 'c' ("catch"), and 'v' ("me") keys
-- The game can be exited at any time using ctrl + c
+- Move up using the 'w' key, left using the 'a' key, down using 's' key, and right using 'd' key. The user maneuvers the snake to pass over the items on the screen (squares) with the objective of growing as large as possible. Avoid the walls and body of the snake.
+- Messages can be sent to the terminal using the 'z' ("you"), 'x' (can't), 'c' ("catch"), and 'v' ("me") keys.
+- The game can be exited at any time using 'ctrl' + 'c'.
